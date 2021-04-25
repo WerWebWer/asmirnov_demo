@@ -6,12 +6,13 @@ project( asmirnov_demo )
 
 find_package( OpenCV REQUIRED )
 
-# set(OpenCV_INCLUDE_DIRS "/home/asmirnov/OV_ARM_package/opencv/include")
+set(OpenCV_INCLUDE_DIRS "/home/asmirnov/OV_ARM_package/opencv/include")
 include_directories( ${OpenCV_INCLUDE_DIRS} )
 
 # InferenceEngine
 
 find_package(InferenceEngine)
+set(InferenceEngine_INCLUDE_DIRS "/home/asmirnov/OV_ARM_package/deployment_tools/inference_engine/include")
 include_directories(${InferenceEngine_INCLUDE_DIRS})
 
 add_executable( asmirnov_demo src.cpp )
