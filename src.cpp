@@ -109,7 +109,7 @@ int main(int argc, char** argv) {
 	}
 	
 
-	bool check = imwrite("/mnt/streltsova_openvino/Result.jpg", result);
+	bool check = imwrite("test_out.jpg", result);
 	if (check == false) {
 		std::cout << "Mission - Saving the image, FAILED" << std::endl;
 	}
