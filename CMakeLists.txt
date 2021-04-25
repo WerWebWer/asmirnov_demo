@@ -6,7 +6,7 @@ project( asmirnov_demo )
 
 find_package( OpenCV REQUIRED )
 
-set(OpenCV_INCLUDE_DIRS "/home/asmirnov/OV_ARM_package/opencv/include")
+# set(OpenCV_INCLUDE_DIRS "/home/asmirnov/OV_ARM_package/opencv/include")
 include_directories( ${OpenCV_INCLUDE_DIRS} )
 
 # InferenceEngine
